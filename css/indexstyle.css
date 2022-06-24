@@ -500,6 +500,32 @@ a {
     box-sizing: border-box;
 }
 
+/*Working info*/
+
+.working_info {
+    width: 100%;
+    display: grid;
+    justify-content: end;
+    text-align: end;
+    row-gap: 5px;
+}
+
+.working_hours {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+    color: #FFFFFF;
+    margin-bottom: 0%;
+}
+
+.working_phone {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 109%;
+    color: #FFFFFF;
+    margin-top: 0%;
+}
 
 
 
