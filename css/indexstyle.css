@@ -110,7 +110,7 @@ body {
     padding: 0;
 }
 
-.page-wrapper {
+.page-body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 27px;
@@ -155,6 +155,10 @@ a {
     text-decoration: none;
 }
 
+.modal {
+    display: none;
+}
+
 /*Header*/
 
 .main-header {
@@ -173,6 +177,8 @@ a {
     min-height: 64px;
 }
 
+/*Site nav*/
+
 .main-nav-list {
     margin-top: 29px;
     display: flex;
@@ -180,7 +186,7 @@ a {
     justify-content: space-between;
 }
 
-.main-nav-list a {
+.main-nav-item a {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -193,27 +199,195 @@ a {
     padding: 5px 13px 10px;
 }
 
-.main-nav-list:hover a {
+.main-nav-item:hover a {
     background-color: var(--basic-white);
     color: var(--basic-black);
 }
 
-.main-nav-list:active a {
+.main-nav-item:active a {
     background-color: var(--site-nav-item-active-color);
     box-shadow: inset 0 2px 1px;
 }
 
-.user-nav-list {
+.menu-wrap {
+    width: 87px;
+}
+
+/*Menu list*/
+
+.menu-list {
+    list-style-type: none;
+    display: none;
+    margin-top: 5px;
+    margin-left: -8px;
+    box-shadow: 0 20px 20px var(--menu-shadow-color);
+    width: 143px;
+    background-color: var(--basic-white);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 5px 0;
+    position: absolute;
+}
+
+.menu-wrap:hover .menu-list {
+    display: block;
+}
+
+.menu-item {
+    width: 100%;
+    height: 27px;
+    z-index: 1000;
+    padding: 4px 4px 4px 0;
+    box-sizing: border-box;
+}
+
+.menu-item:not(:first-child) {
+    margin-top: 5px;
+}
+.menu-item:hover {
+    background-color: var(--menu-hover-background-color);
+}
+
+.menu-item:active {
+    background-color: var(--menu-active-background-color);
+}
+
+.menu-link {
+    color: var(--basic-black);
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 21px;
+    height: 27px;
+    text-decoration: none; 
+    display: block;
+}
+
+.menu-item:hover .menu-link {
+    color: var(--basic-black);
+}
+
+.menu-news-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.menu-horizontal-line {
+    margin-top: 5px;
+    height: 1px;
+    background-color: var(--horizontal-line-color);
+    width: 128px;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+/*Buttons nav*/
+
+.user-nav {
+    margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+    min-width: 244px;
 }
 
-.user-nav-item {
-    margin-top: 29px;
-    margin-right: 40px;
+.search-link,
+.autorization-link,
+.basket-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: var(--hover-background-color);
+    position: relative;
 }
 
-.user-nav-item:last-of-type {
-    margin-right: 0;
+.search-link:hover,
+.autorization-link:hover,
+.basket-link:hover{
+    background-color: var(--basic-white);
+    color: var(--basic-black);
 }
+
+.search-icon,
+.autorization-icon,
+.basket-icon {
+    fill: var(--basic-white);
+}
+
+.search-form-wrap,
+.autorization-form-wrap {
+    animation: bounce 0.8s;
+    background-color: var(--form-background-color);
+    box-shadow: 0 20px 20px var(--shadow-color);
+    border-radius: 4px;
+}
+
+.search-wrap:hover .search-link,
+.autorization-wrap:hover .autorization-link {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+}
+
+.autorization-wrap:hover .autorization-icon,
+.search-wrap:hover .search-icon {
+    fill: var(--basic-black);
+}
+
+.autorization-form input,
+.search-form input {
+    background-color: var(--basic-white);
+    border: 1px solid var(--input-border-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    font-style: normal;
+    color: #999999;
+    padding: 15px;
+}
+
+/*Search*/
+
+.search-wrap {
+    width: 32px;
+    height: 32px;
+    padding-bottom: 5px;
+    box-sizing: initial;
+    margin-right: 150px;
+}
+
+.search-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.search-form-wrap {
+    position: absolute;
+    top: 72px;
+    left: 590px;
+    display: none;
+    z-index: 100;
+    padding: 20px 15px; 
+    box-sizing: border-box;
+}
+
+.search-wrap:hover .search-form-wrap {
+    display: block;
+}
+
+.search-input {
+    width: 311px;
+    height: 44px;
+}
+
+
