@@ -622,6 +622,7 @@ p {
 /*Promo*/
 
 .promo-section {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
@@ -646,6 +647,7 @@ p {
     line-height: 41px;
     color: #FFFFFF;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .promo-text {
@@ -679,5 +681,17 @@ p {
     box-sizing: border-box;
     background-size: cover;
     background-position: top;
+}
+
+.raspberry-button {
+    position: absolute;
+    left: 370px;
+    bottom: 25px;
+}
+
+.chocolate-button {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
 }
 
