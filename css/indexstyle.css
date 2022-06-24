@@ -118,13 +118,14 @@ body {
 
 .button {
     cursor: url("../img/cursor.svg"), auto;
-    border: none;
     background: -webkit-linear-gradient(180deg, var(--btn-gradient-first-color) 0%, var(--btn-gradient-second-color) 100%);
     font-weight: 700;
     border-radius: 70px;
-    box-shadow: 0 2px 2px var(--btn-shadow-color);
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 2px var(--btn-shadow-color);
     color: var(--basic-white);
     text-shadow: 0 2px 5px var(--btn-text-shadow-color);
+    border: none;
     text-decoration: none;
 }
 
@@ -348,33 +349,46 @@ a {
     padding: 15px;
 }
 
+.autorization-form input:focus,
+.search-form input:focus {
+    border: 2px solid var(--input-border-focus-color);
+    outline: none;
+    padding: 14px;
+}
+
+.autorization-icon,
+.basket-icon {
+    position: absolute;
+    top: 6px;
+    left: 16px;
+}
+
 /*Search*/
 
 .search-wrap {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     padding-bottom: 5px;
     box-sizing: initial;
-    margin-right: 150px;
 }
 
 .search-link {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     display: block;
 }
 
 .search-icon {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 9px;
+    left: 9px;
 }
 
 .search-form-wrap {
     position: absolute;
-    top: 72px;
-    left: 590px;
+    top: 75px;
+    left: 540px;
     display: none;
     z-index: 100;
     padding: 20px 15px; 
@@ -389,5 +403,103 @@ a {
     width: 311px;
     height: 44px;
 }
+
+/*Authorization (lol i've made a mistake)*/
+
+.autorization-wrap {
+    width: 96px;
+    height: 35px;
+    padding-bottom: 5px;
+    box-sizing: initial;
+    margin-left: 10px;
+}
+
+.autorization-link {
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+    padding-top: 8px;
+    padding-left: 45px;
+    box-sizing: border-box;
+}
+
+.autorization-form-wrap {
+    width: 280px;
+    height: 217px;
+    z-index: 100;
+    padding-left: 19px;
+    padding-right: 17px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 76px;
+    left: 786px;
+    display: none;
+}
+
+.autorization-wrap:hover .autorization-form-wrap {
+    display: block;
+}
+
+.autorization-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autorization-links {
+    width: 119px;
+}
+
+.autorization-button {
+    width: 105px;
+    height: 48px;
+}
+
+.autorization-links a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 185%;
+    color: #323232;
+    text-decoration: underline;
+}
+
+.autorization-links a:hover {
+    color: var(--hover-link-color);
+    text-decoration-color: var(--underline-hover-color);
+}
+.autorization-login-input,
+.autorization-password-input {
+    width: 241px;
+    height: 44px;
+    margin-top: 20px;
+}
+
+.autorization-login-input:focus,
+.autorization-password-input:focus {
+    outline: none;
+    font-weight: 700;
+}
+
+/*Basket*/
+
+.basket-wrap {
+    width: 103px;
+    height: 35px;
+    padding-bottom: 5px;
+    box-sizing: initial;
+    margin-left: 10px;
+}
+
+.basket-link {
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+    padding-top: 8px;
+    padding-left: 45px;
+    box-sizing: border-box;
+}
+
+
 
 
