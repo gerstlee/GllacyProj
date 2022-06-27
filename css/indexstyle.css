@@ -798,10 +798,39 @@ p {
     position: relative;
 }
 
-.features-icon {
+.features-icon-icecream {
     position: absolute;
     top: 0px;
     left: -40px;
+}
+
+.features-icon-leaf {
+    position: absolute;
+    top: 2px;
+    left: -40px;
+}
+
+.features-icon-cow {
+    position: absolute;
+    top: 4px;
+    left: -43.5px;
+}
+
+.features-icon-thermo {
+    position: absolute;
+    top: 3px;
+    left: -40px;
+}
+
+.icon-border {
+    position: absolute;
+    top: -8px;
+    left: -56px;
+    content: "";
+    border: 2px solid var(--basic-black);
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
 }
 
 .features-item-container {

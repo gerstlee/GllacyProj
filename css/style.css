@@ -1092,17 +1092,7 @@ a {
     display: flex;
 }
 
-.features-item:before {
-    border: 2px solid var(--basic-black);
-    margin-right: 6px;
-    content: "";
-    width: 49px;
-    height: 49px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .features-ice-cream-item:before {
     background-image: url("../img/index/icon_ice_cream.svg");
