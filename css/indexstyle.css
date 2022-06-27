@@ -838,3 +838,35 @@ p {
     padding-right: 30px;
     margin-top: 10px;
 }
+
+/*Seo*/
+
+.blog-wrapper {
+    width: 560px;
+    min-height: 220px;
+    background-image: url("../img/index/strawberry_background.jpg");
+    background-color: var(--basic-white);
+    background-size: cover;
+    background-position: top;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-bottom: 23px;
+    padding-top: 2px;
+}
+
+.blog-wrapper p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    color: #323232;
+    margin-bottom: 0;
+}
+
+.blog-wrapper a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: #323232;
+    text-decoration: underline;
+    margin-top: 0;
+}
