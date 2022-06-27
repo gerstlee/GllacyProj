@@ -726,11 +726,6 @@ p {
     z-index: 1;
 }
 
-/*.hit-price {
-    position: absolute;
-    z-index: 100;
-}*/
-
 .hit-price-wrap {
     position: relative;
     z-index: 100;
@@ -840,6 +835,13 @@ p {
 }
 
 /*Seo*/
+
+.seo-section {
+    width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 /*Blog*/
 
