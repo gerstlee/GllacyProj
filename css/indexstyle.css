@@ -697,6 +697,13 @@ p {
 
 /*Hit*/
 
+.hit-section {
+    width: 1132px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .hit-wrapper {
     width: 268px;
 }
@@ -709,6 +716,7 @@ p {
     border-radius: 50%;
     width: 267px;
     height: 267px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
 }
 
 .hit-icon {
@@ -718,14 +726,22 @@ p {
     z-index: 1;
 }
 
-.hit-price {
+/*.hit-price {
     position: absolute;
     z-index: 100;
-    bottom: -550px;
-    left: 47px;
+}*/
+
+.hit-price-wrap {
+    position: relative;
+    z-index: 100;
 }
 
-.hit-price p {
+.hit-price-item {
+    position: absolute;
+    bottom: -10px;
+}
+
+.hit-price-wrap p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
