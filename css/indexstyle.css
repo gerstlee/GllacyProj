@@ -841,6 +841,8 @@ p {
 
 /*Seo*/
 
+/*Blog*/
+
 .blog-wrapper {
     width: 560px;
     min-height: 220px;
@@ -869,4 +871,59 @@ p {
     color: #323232;
     text-decoration: underline;
     margin-top: 0;
+}
+
+.blog-wrapper a:hover,
+.blog-wrapper a:active {
+    color: var(--link-hover-color);
+}
+
+/*Postal*/
+
+.postal-wrapper {
+    background-image: url("../img/index/postal_background.jpg");
+    background-size: cover;
+    background-color: var(--basic-white);
+    color: var(--postal-color);
+    width: 560px;
+    height: 220px;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.postal-container {
+    background-color: var(--form-background-color);
+    width: 548px;
+    min-height: 208px;
+    padding: 23px 16px 29px 20px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.postal-container p {
+    line-height: 22px;
+    color: #5A5A5A;
+}
+
+.postal-form {
+    margin-top: 25px;
+}
+
+.postal-form input {
+    width: 371px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+    margin-right: 3px;
+    padding-left: 11px;
+}
+
+.postal-button {
+    width: 131px;
+    height: 46px;
+    font-size: 18px;
 }
