@@ -695,3 +695,54 @@ p {
     bottom: 25px;
 }
 
+/*Hit*/
+
+.hit-wrapper {
+    width: 268px;
+}
+
+.hit-img {
+    position: relative;
+}
+
+.hit-img img {
+    border-radius: 50%;
+    width: 267px;
+    height: 267px;
+}
+
+.hit-icon {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    z-index: 1;
+}
+
+.hit-price {
+    position: absolute;
+    z-index: 100;
+    bottom: -550px;
+    left: 47px;
+}
+
+.hit-price p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 29%;
+    color: var(--basic-white);
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.hit-link {
+    text-align: center;
+}
+
+.hit-link a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    color: var(--basic-white);
+    text-decoration: underline;
+}
