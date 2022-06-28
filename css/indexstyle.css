@@ -706,6 +706,12 @@ p {
 
 .hit-wrapper {
     width: 268px;
+    cursor: url("../img/cursor.svg"), auto;
+    margin-bottom: -82px;
+}
+
+.hit-wrapper:hover{
+    z-index: 100;
 }
 
 .hit-img {
@@ -728,7 +734,6 @@ p {
 
 .hit-price-wrap {
     position: relative;
-    z-index: 100;
 }
 
 .hit-price-item {
@@ -758,29 +763,32 @@ p {
     text-decoration: underline;
 }
 
-.hit-wrapper:hover {
-    width: 296px;
-    height: 408px;
-    background: rgba(248, 247, 244, 0.2);
-    mix-blend-mode: normal;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-}
-
-.hit-wrapper:hover .hit-img {
-    margin-left: 20px;
-}
-
-.hit-wrapper:hover .hit-button {
-    display: block;
+.hit-link a:hover {
+    color: var(--hover-link-color)
 }
 
 .hit-button {
     width: 203px;
     height: 48px;
     font-size: 18px;
-    margin-top: 15px;
-    margin-left: 45px;
-    display: none;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    visibility: hidden;
+}
+
+.hit-wrapper:hover {
+    background: rgba(248, 247, 244, 0.2);
+    mix-blend-mode: normal;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hit-wrapper:hover .hit-button {
+    visibility: visible;
+}
+
+.hit-figure {
+    margin: 0;
 }
 
 /*Features*/
@@ -988,6 +996,7 @@ p {
 
 .info-section {
     width: 305px;
+    height: 41px;
     display: grid;
     grid-template-columns: 1fr auto;
 }
@@ -995,7 +1004,6 @@ p {
 .info-section a {
     font-weight: 400;
     font-size: 13px;
-    line-height: 123%;
     color: #FFFFFF;
     text-decoration: underline;
 }
@@ -1016,6 +1024,7 @@ p {
     top: 7px;
     left: -23px;
 }
+
 
 /*Academy*/
 
