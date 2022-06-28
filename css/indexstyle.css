@@ -758,6 +758,31 @@ p {
     text-decoration: underline;
 }
 
+.hit-wrapper:hover {
+    width: 296px;
+    height: 408px;
+    background: rgba(248, 247, 244, 0.2);
+    mix-blend-mode: normal;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hit-wrapper:hover .hit-img {
+    margin-left: 20px;
+}
+
+.hit-wrapper:hover .hit-button {
+    display: block;
+}
+
+.hit-button {
+    width: 203px;
+    height: 48px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 45px;
+    display: none;
+}
+
 /*Features*/
 
 .features-wrapper {
@@ -928,4 +953,81 @@ p {
     width: 131px;
     height: 46px;
     font-size: 18px;
+}
+
+/*Map*/
+
+
+
+/*Footer*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 188px 355px 219px;
+    column-gap: 215px;
+    padding-bottom: 10px;
+}
+
+/*Contacts*/
+
+.contacts-section {
+    width: 188px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts-link img {
+    width: 40px;
+    height: 40px;
+    border: solid 4px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+/*Info*/
+
+.info-section {
+    width: 305px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.info-section a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 123%;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.info-link:hover {
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.info-item:first-of-type {
+    position: relative;
+}
+
+.heart-icon {
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    top: 7px;
+    left: -23px;
+}
+
+/*Academy*/
+
+.academy-section {
+    width: 219px;
+    min-height: 60px;
+}
+
+.academy-section p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: #FEFEFE;
+    margin-top: 0;
 }
