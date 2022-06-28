@@ -985,11 +985,16 @@ p {
     justify-content: space-between;
 }
 
-.contacts-link img {
+.contacts-link svg {
     width: 40px;
     height: 40px;
     border: solid 4px rgba(255, 255, 255, 0.5);
     border-radius: 50%;
+    fill: var(--transparent-color);
+}
+
+.contacts-link svg:hover {
+    fill: var(--basic-white);
 }
 
 /*Info*/
