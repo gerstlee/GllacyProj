@@ -1,0 +1,27 @@
+/*Breadcrumps*/
+
+.breadcrumps-wrapper {
+    margin-top: -55px;
+    margin-left: -5px;
+}
+
+.breadcrumps-item {
+    display: inline-block;
+}
+
+.breadcrumps-item::before {
+    content: '»';
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.breadcrumps-item:first-child::before {
+    content: "";
+}
+
+.header-catalog-title p {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 117%;
+    color: #FFFFFF;
+}
