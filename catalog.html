@@ -164,89 +164,80 @@
         <main class="catalog-wrapper wrapper">
             <section class="catalog-filter-section">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <div class="filter-first-row">
-                    <fieldset class="catalog-filter-wrapper sorting-wrapper">
-                        <legend>Сортировка:</legend>
-                        <select class="sorting-form">
-                            <option>по популярности</option>
-                            <option>по цене</option>
-                            <option>по жирности</option>
-                        </select>
-                        <svg
-                            class="sort-arrow-icon"
-                            width="11"
-                            height="10"
-                            viewbox="0 0 11 10"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 10L0 0H11"/>
-                        </svg>
-                    </fieldset>
-                    <fieldset class="catalog-filter-wrapper price-wrapper">
-                        <legend>Цена:
-                            <span class="min-price">100</span>
-                            &#8381; &#8211;
-                            <span class="max-price">500</span>
-                            &#8381;
-                        </legend>
-                        <div class="price-range-controls">
-                            <div class="price-scale">
-                                <div class="scale-bar"></div>
-                            </div>
-                            <div tabindex="0" class="toggle toggle-min"></div>
-                            <div tabindex="0" class="toggle toggle-max"></div>
+                <fieldset class="catalog-filter-wrapper sorting-wrapper">
+                    <legend>Сортировка:</legend>
+                    <select class="sorting-form">
+                        <option>по популярности</option>
+                        <option>по цене</option>
+                        <option>по жирности</option>
+                    </select>
+                    <svg class="sort-arrow-icon" width="11" height="10" viewbox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 10L0 0H11" />
+                    </svg>
+                </fieldset>
+                <fieldset class="catalog-filter-wrapper price-wrapper">
+                    <legend>Цена:
+                        <span class="min-price">100</span>
+                        &#8381; &#8211;
+                        <span class="max-price">500</span>
+                        &#8381;
+                    </legend>
+                    <div class="price-range-controls">
+                        <div class="price-scale">
+                            <div class="scale-bar"></div>
                         </div>
-                    </fieldset>
-                    <fieldset class="catalog-filter-wrapper fat-wrapper">
-                        <legend>Жирность:</legend>
-                        <ul class="fat-list list">
-                            <li class="fat-item">
-                                <input type="radio" name="fat" value="0%" id="0">
-                                <label for="0">0%</label>
-                            </li>
-                            <li class="fat-item">
-                                <input type="radio" name="fat" value="under10%" id="10" checked>
-                                <label for="10">до 10%</label>
-                            </li>
-                            <li class="fat-item">
-                                <input type="radio" name="fat" value="under30%" id="30">
-                                <label for="30">до 30%</label>
-                            </li>
-                            <li class="fat-item">
-                                <input type="radio" name="fat" value="from30%" id="30+">
-                                <label for="30+">выше 30%</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
-                <div class="filter-second-row">
-                    <fieldset class="catalog-filter-wrapper filler-wrapper">
-                        <legend>Наполнители:</legend>
-                        <ul class="filler-list list">
-                            <li class="filler-item">
-                                <input type="checkbox" name="choco" id="filler-choco" checked>
-                                <label for="filler-choco">шоколадные</label>
-                            </li>
-                            <li class="filler-item">
-                                <input type="checkbox" name="sugar" id="filler-shugar" checked>
-                                <label for="filler-shugar">сахарные присыпки</label>
-                            </li>
-                            <li class="filler-item">
-                                <input type="checkbox" name="fruits" id="filler-fruits">
-                                <label for="filler-fruits">фрукты</label>
-                            </li>
-                            <li class="filler-item">
-                                <input type="checkbox" name="syrups" id="filler-syrups">
-                                <label for="filler-syrups">сиропы</label>
-                            </li>
-                            <li class="filler-item">
-                                <input type="checkbox" name="jams" id="filler-jams">
-                                <label for="filler-jams">джемы</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <div class="filter-button-wrapper">
-                        <button type="button" class="filter-button">Применить</button>
+                        <div tabindex="0" class="toggle toggle-min"></div>
+                        <div tabindex="0" class="toggle toggle-max"></div>
                     </div>
+                </fieldset>
+                <fieldset class="catalog-filter-wrapper fat-wrapper">
+                    <legend>Жирность:</legend>
+                    <ul class="fat-list list">
+                        <li class="fat-item">
+                            <input type="radio" name="fat" value="0%" id="0">
+                            <label for="0">0%</label>
+                        </li>
+                        <li class="fat-item">
+                            <input type="radio" name="fat" value="under10%" id="10" checked>
+                            <label for="10">до 10%</label>
+                        </li>
+                        <li class="fat-item">
+                            <input type="radio" name="fat" value="under30%" id="30">
+                            <label for="30">до 30%</label>
+                        </li>
+                        <li class="fat-item">
+                            <input type="radio" name="fat" value="from30%" id="30+">
+                            <label for="30+">выше 30%</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="catalog-filter-wrapper filler-wrapper">
+                    <legend>Наполнители:</legend>
+                    <ul class="filler-list list">
+                        <li class="filler-item">
+                            <input type="checkbox" name="choco" id="filler-choco" checked>
+                            <label for="filler-choco">шоколадные</label>
+                        </li>
+                        <li class="filler-item">
+                            <input type="checkbox" name="sugar" id="filler-shugar" checked>
+                            <label for="filler-shugar">сахарные присыпки</label>
+                        </li>
+                        <li class="filler-item">
+                            <input type="checkbox" name="fruits" id="filler-fruits">
+                            <label for="filler-fruits">фрукты</label>
+                        </li>
+                        <li class="filler-item">
+                            <input type="checkbox" name="syrups" id="filler-syrups">
+                            <label for="filler-syrups">сиропы</label>
+                        </li>
+                        <li class="filler-item">
+                            <input type="checkbox" name="jams" id="filler-jams">
+                            <label for="filler-jams">джемы</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="filter-button-wrapper">
+                    <button type="button" class="filter-button">Применить</button>
                 </div>
             </section>
         </main>
