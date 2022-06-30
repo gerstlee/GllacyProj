@@ -63,6 +63,7 @@
 
 .sorting-wrapper {
     width: 196px;
+    margin-right: 0;
     border: none;
     position: relative;
 }
@@ -115,7 +116,7 @@ select {
 .price-wrapper {
     width: 222px;
     border: none;
-    margin-left: 15px;
+    margin-left: 0;
 }
 
 .price-range-controls {
@@ -127,17 +128,6 @@ select {
     padding-top: 7px;
     box-sizing: border-box;
 }
-
-/*.scale-bar {
-    position: absolute;
-    width: 70%;
-    height: 5px;
-    background: #F8F7F4;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    top: 15px;
-    right: 29px;
-}*/
 
 .price-scale {
     height: 5px;
@@ -175,4 +165,80 @@ select {
 
 .toggle-max {
     right: 45px;
+}
+
+/*Fat*/
+
+.fat-wrapper {
+    width: 405px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-left: 15px;
+}
+
+.fat-list {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--hover-background-color);
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 36px;
+    padding: 7px 15px;
+}
+
+.fat-label {
+    position: relative;
+    cursor: url("../img/cursor.svg"), auto;
+    margin-left: 25px;
+}
+
+.fat-label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 3.52px solid var(--transparent-color);
+    box-sizing: border-box;
+    position: absolute;
+    margin-right: 11px;
+    left: -25px;
+    top: -2px; 
+}
+
+.fat-label:hover::before {
+    border: 3.52px solid var(--basic-white);
+}
+
+.fat-label:hover::after {
+    background-color: var(--basic-white);
+}
+
+.fat-label:after {
+    content: "";
+    display: none;
+    width: 7.92px;
+    height: 7.92px;
+    background-color: var(--transparent-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -18px;
+    top: 4.9px;
+}
+
+.fat-radio:checked + .fat-label:after {
+    display: block;
+}
+
+.fat-radio:disabled + .fat-label::before {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.fat-radio:disabled + .fat-label:after {
+    opacity: 0.4;
+    cursor: default;
 }
