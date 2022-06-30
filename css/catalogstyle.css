@@ -355,3 +355,15 @@ select {
     margin-top: 20px;
     margin-left: 5px;
 }
+
+/*Products*/
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-hit {
+    margin-top: 50px;
+}
