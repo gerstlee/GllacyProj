@@ -242,3 +242,116 @@ select {
     opacity: 0.4;
     cursor: default;
 }
+
+/*Filler*/
+
+.filler-wrapper {
+    width: 714px;
+    border: none;
+}
+
+.filler-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--hover-background-color);
+    border-radius: 20px;
+    height: 36px;
+    margin-top: 0;
+}
+
+.filler-item {
+    margin-top: 6.5px;
+}
+
+.filler-label {
+    display: block;
+    position: relative; 
+    cursor: url("../img/cursor.svg"), auto;
+    padding-top: 1px;
+    cursor: url("../img/cursor.svg"), auto;
+}
+
+.filler-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.filler-check-on {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-right: 12px;
+    left: 20px;
+    top: 1.5px; 
+    opacity: 0.8;
+    fill: var(--basic-white);
+    display: none;
+}
+
+.filler-check-off {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-right: 12px;
+    left: 20px;
+    top: 1.5px; 
+    opacity: 0.8;
+    fill: var(--basic-white);
+    display: none;
+}
+
+.filler-radio ~ .filler-check-off {
+    display: block;
+}
+
+.filler-radio:checked ~ .filler-check-on {
+    display: block;
+}
+
+.filler-radio:checked ~ .filler-check-off {
+    display: none;
+}
+
+.filler-label:hover .filler-check-off,
+.filler-label:hover .filler-check-on {
+    opacity: 1;
+}
+
+.filler-radio:disabled .filler-check-off,
+.filler-radio:disabled .filler-check-on {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/*Catalog button*/
+
+.filter-button {
+    width: 146px;
+    height: 36px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    font-weight: 500;
+    border: 2px solid #FFFFFF;
+    cursor: url("../img/cursor.svg"), auto;
+}
+
+.filter-button:hover {
+    color: black;
+    background: #FFFFFF;
+}
+
+.filter-button:focus {
+    color: black;
+    background: #EDEDED;
+    box-shadow: inset 0px 2px 1px #696969;
+    border: none;
+}
+
+.filter-button-wrapper {
+    margin-top: 20px;
+    margin-left: 5px;
+}
