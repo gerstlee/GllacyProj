@@ -367,3 +367,62 @@ select {
 .catalog-hit {
     margin-top: 50px;
 }
+
+/*Pagination*/
+
+.pagination-list {
+    list-style-type: none;
+    margin-bottom: 35px;
+    margin-top: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.pagination-item {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.pagination-item:hover {
+    background-color: var(--hover-background-color);
+}
+
+.pagination-item-current {
+    background-color: var(--basic-white);
+}
+
+.pagination-item-current a {
+    color: black;
+}
+
+.pagination-link {
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.pagination-previous-page {
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.pagination-next-page {
+    margin-top: 4.5px;
+    margin-left: 9px;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.pagination-inactive {
+    fill: var(--hover-background-color);
+}
+
+.pagination-active {
+    fill: var(--basic-white);
+}
