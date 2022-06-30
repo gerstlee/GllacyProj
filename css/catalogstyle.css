@@ -370,6 +370,7 @@ select {
 
 /*Pagination*/
 
+
 .pagination-list {
     list-style-type: none;
     margin-bottom: 35px;
@@ -425,4 +426,24 @@ select {
 
 .pagination-active {
     fill: var(--basic-white);
+}
+
+/*Div*/
+
+.division {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.div-bar {
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    content: "";
+    width: 1263px;
+    height: 1.5px;
+    left: -60px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
 }
