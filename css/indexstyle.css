@@ -210,6 +210,10 @@ p {
     color: var(--basic-black);
 }
 
+.main-nav-item:hover .menu-list a {
+    background-color: transparent;
+}
+
 .main-nav-item:active a {
     background-color: var(--site-nav-item-active-color);
     box-shadow: inset 0 2px 1px;
@@ -217,13 +221,16 @@ p {
 
 .menu-wrap {
     width: 87px;
+    background-color: transparent;
+}
+
+.menu-wrap:hover .menu-list {
+    display: block;
 }
 
 /*Menu list*/
 
 .menu-list {
-    list-style-type: none;
-    display: none;
     margin-top: 5px;
     margin-left: -8px;
     box-shadow: 0 20px 20px var(--menu-shadow-color);
@@ -232,11 +239,28 @@ p {
     border-radius: 4px;
     font-size: 14px;
     line-height: 16px;
-    padding: 5px 0;
+    padding: 10px 0;
     position: absolute;
+    display: none;
 }
 
-.menu-wrap:hover .menu-list {
+.active-page {
+    background-color: var(--page-active-background-color);
+    text-decoration: none;
+}
+
+.active-page .menu-link {
+    color: var(--basic-white);
+}
+
+.menu-item a {
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--basic-black);
+    height: 27px;
+    text-decoration: none; 
     display: block;
 }
 
@@ -251,6 +275,7 @@ p {
 .menu-item:not(:first-child) {
     margin-top: 5px;
 }
+
 .menu-item:hover {
     background-color: var(--menu-hover-background-color);
 }
@@ -259,21 +284,7 @@ p {
     background-color: var(--menu-active-background-color);
 }
 
-.menu-link {
-    color: var(--basic-black);
-    font-size: 14px;
-    line-height: 16px;
-    margin-left: 21px;
-    height: 27px;
-    text-decoration: none; 
-    display: block;
-}
-
-.menu-item:hover .menu-link {
-    color: var(--basic-black);
-}
-
-.menu-news-link {
+.menu-news a {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -541,6 +552,24 @@ p {
 }
 
 /*Slider*/
+
+.page-wrapper-1 {
+    transition: 1s;
+    background-color: var(--first-background-color);
+    background-image: url("../img/index/slider-img-1.png");
+}
+
+.page-wrapper-2 {
+    transition: 1s;
+    background-color: var(--second-background-color);
+    background-image: url("../img/index/slider-img-2.png");
+}
+
+.page-wrapper-3 {
+    transition: 1s;
+    background-color: var(--third-background-color);
+    background-image: url("../img/index/slider-img-3.png");
+}
 
 .slider-section {
     position: relative;
