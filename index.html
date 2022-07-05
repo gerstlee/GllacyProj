@@ -414,6 +414,39 @@
             </section>
         </footer>
 
+        <div class="feedback-modal-window">
+            <section class="feedback-section">
+                <h2 class="visually-hidden">Форма обратной связи</h2>
+                <p class="feedback-header">Мы обязательно вам ответим!</p>
+                <button class="feedback-exit-button" type="button" aria-label="Close the modal window">
+                    <svg class="feedback-exit-icon" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.4539 1.46L16.0399 0.046L8.9999 7.086L1.9599 0.046L0.545898 1.46L7.5859 8.5L0.545898 15.54L1.9599 16.954L8.9999 9.914L16.0399 16.954L17.4539 15.54L10.4139 8.5L17.4539 1.46Z" />
+                    </svg>
+                </button>
+                <form class="feedback-form">
+                    <input 
+                        class="feedback-name-input"
+                        name="name"
+                        type="text"
+                        placeholder="Имя Фамилия"
+                        aria-label="Имя и фамилия">
+                    <input 
+                        class="feedback-email-input"
+                        name="email"
+                        type="email"
+                        placeholder="email@example.com"
+                        aria-label="Почтовый адрес">
+                    <textarea 
+                        class="feedback-textarea"
+                        name="text"
+                        placeholder="В свободной форме"
+                        aria-label="Текст сообщения">
+                    </textarea>
+                    <button class="button feedback-submit-button" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+
         <script src="js\myjs.js"></script>
     </body>
 </html>
